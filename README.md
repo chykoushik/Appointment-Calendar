@@ -1,16 +1,11 @@
 # Appointment Calendar
- ava, MySQL
+ Java, MySQL
 
 
 Functions:\
-Register (user)
-
-Login (user, admin)
-
-Create an appointment
-
-Delete an appointment
-
-Edit an appointment
-
+Register (user)\
+Login (user, admin)\
+Create an appointmen\
+Delete an appointme\
+Edit an appoint\
 Update user profile
