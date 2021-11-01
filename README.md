@@ -1,9 +1,8 @@
 # Appointment Calendar
- Tool: Java, MySQL
+ ava, MySQL
 
 
-Functions:
-
+Functions:\
 Register (user)
 
 Login (user, admin)
