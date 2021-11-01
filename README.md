@@ -1,5 +1,5 @@
 # Appointment Calendar
- Java, MySQL
+ Tool: Java, MySQL
 
 
 Functions:
