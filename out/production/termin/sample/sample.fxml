@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="305.0" prefWidth="612.0" snapToPixel="false" style="-fx-background-color: #808080;">
+         <children>
+            <HBox layoutX="-5.0" layoutY="22.0" prefHeight="70.0" prefWidth="614.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#LoginpaneShow" prefHeight="68.0" prefWidth="290.0" text="Login" />
+                  <Button mnemonicParsing="false" onAction="#SignuppaneShow" prefHeight="69.0" prefWidth="323.0" text="Registration" />
+               </children>
+            </HBox>
+            <AnchorPane fx:id="pane_login" focusTraversable="true" layoutX="4.0" layoutY="92.0" onDragDetected="#LoginpaneShow" prefHeight="202.0" prefWidth="606.0" AnchorPane.bottomAnchor="16.218178065276447" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="2.1090906972333414" AnchorPane.topAnchor="92.0">
+               <children>
+                  <TextField fx:id="txt_username" layoutX="70.0" layoutY="68.0" promptText="username" />
+                  <PasswordField fx:id="txt_password" layoutX="70.0" layoutY="101.0" promptText="password" />
+                  <ComboBox fx:id="type" disable="true" layoutX="70.0" layoutY="31.0" prefWidth="150.0" promptText="User Login" />
+                  <Button fx:id="btn_login" layoutX="122.0" layoutY="140.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+                  <ComboBox fx:id="type1" disable="true" layoutX="346.0" layoutY="31.0" prefWidth="150.0" promptText="Admin Login" />
+                  <TextField fx:id="txt_username1" layoutX="346.0" layoutY="68.0" promptText="admin username" />
+                  <PasswordField fx:id="txt_password1" layoutX="346.0" layoutY="101.0" promptText="password" />
+                  <Button fx:id="btn_login1" layoutX="390.0" layoutY="140.0" mnemonicParsing="false" onAction="#AdminLogin" text="Login" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane_signup" layoutX="9.0" layoutY="116.0" onDragDetected="#SignuppaneShow" prefHeight="194.0" prefWidth="596.0" visible="false">
+               <children>
+                  <TextField fx:id="txt_username_up" layoutX="198.0" layoutY="45.0" promptText="username" />
+                  <TextField fx:id="email_up" layoutX="198.0" layoutY="127.0" promptText="email" />
+                  <ComboBox fx:id="type_up" layoutX="198.0" layoutY="1.0" prefWidth="150.0" promptText="type" />
+                  <Button fx:id="btn_signup" layoutX="232.0" layoutY="161.0" mnemonicParsing="false" onAction="#add_users" text="Registration" />
+                  <PasswordField fx:id="txt_password_up" layoutX="197.0" layoutY="85.0" promptText="password" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
